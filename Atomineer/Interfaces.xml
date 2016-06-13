@@ -1,0 +1,44 @@
+﻿<Interfaces suffix=".%ip%">
+  <!--
+		AutoDoc rules
+		=============
+
+		For each documentation entry that needs to be generated, Atomineer executes an appropriate
+		section of the rules in this AutoDoc section (e.g. for a parameter, the <Parameters> section
+		is executed). Execution stops when a match is found and a documentation result is returned.
+
+		Full documentation can be found in the Atomineer user manual.
+		-->
+			<!-- Rules for auto-documentation of interfaces
+
+				 Full documentation can be found in the Atomineer user manual.
+
+				 Note that you can delete all the examples, and as long as this section does not
+				 end with a <Set> command, Atomineer will "fall through" your custom rules and 
+				 use its defaults if your rules do not supply any documentation text.
+
+				 Additional values that can be used for filtering/documenting include:
+					type			"interface" (all languages) or "annotation" (java)
+			-->
+
+			<!-- If this is derived and the special 'docPrimaryBaseWithSee' or 'docBasesWithSee' flag is set, we
+				 don't use the standard documentation generation approach, but instead substitute one or many <see>
+				 references. Note that you also need to disable duplication of base documentation in the preferences
+				 to allow this rule to be applied for overrides.
+			-->
+			<If docBasesWithSee="true">
+				<IfNot seeAllBases="unknown">
+					<Set desc="%seeAllBases%" />
+				</IfNot>
+			</If>
+
+			<If docPrimaryBaseWithSee="true">
+				<IfNot baseClass="unknown">
+					<Set desc="See &lt;see cref=&quot;%baseClassRef%&quot;/&gt;" />
+				</IfNot>
+			</If>
+
+			<Set desc="%type:SCase% for " continue="y" />
+			<If name="IDisposable" desc="objects that provide custom disposal implementations" />
+			<Set desc="%sName:lCase%" />
+		</Interfaces>

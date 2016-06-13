@@ -1,0 +1,30 @@
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <IncludeFolders>$(MSBuildProjectDirectory)\Include</IncludeFolders>
+    </PropertyGroup>
+    <ItemGroup>
+        <T4ReferencePath Include="$(VsInstallDir)PublicAssemblies\" />
+    </ItemGroup>
+    <ItemGroup>
+        <DirectiveProcessor Include="T4Toolbox.XsdProcessor">
+            <Class>T4Toolbox.XsdProcessor</Class>
+            <CodeBase>C:\Program Files (x86)\T4 Toolbox\Bin\T4Toolbox.10.0.dll</CodeBase>
+        </DirectiveProcessor>
+    </ItemGroup>
+    <ItemGroup>
+        <DirectiveProcessor Include="T4Toolbox.XsdProcessor">
+            <Class>T4Toolbox.XsdProcessor</Class>
+            <Assembly>T4Toolbox.10.0, Version=10.3.7.1, Culture=neutral, PublicKeyToken=7e313accbcce84dc</Assembly>
+        </DirectiveProcessor>
+    </ItemGroup>
+    <ItemGroup>
+        <None Include="Template.tt">
+            <Generator>TextTemplatingFileGenerator</Generator>
+            <OutputFilePath>$(IntermediateOutputPath)</OutputFilePath>
+            <LastGenOutput>Template.cs</LastGenOutput>
+        </None>
+    </ItemGroup>
+    <PropertyGroup>
+        <OverwriteReadOnlyOutputFiles>true</OverwriteReadOnlyOutputFiles>
+    </PropertyGroup>
+</Project>

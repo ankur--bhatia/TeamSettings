@@ -1,0 +1,42 @@
+﻿<NonSplittable>
+  <!--
+		AutoDoc rules
+		=============
+
+		For each documentation entry that needs to be generated, Atomineer executes an appropriate
+		section of the rules in this AutoDoc section (e.g. for a parameter, the <Parameters> section
+		is executed). Execution stops when a match is found and a documentation result is returned.
+
+		Full documentation can be found here:
+			http://www.atomineerutils.com/rulesguide.php
+		-->
+			<!--
+			Non-Splittable tokens
+			=====================
+			Some tokens used in code should not be split into separate words,
+			e.g. "IPv4" should not be broken into "I Pv 4" by Atomineer.
+			This list specifies these special 'words' so that the token is not split up, and the casing can be standardised.
+			Just enter the correct capitalisation in this list. Note that any entries in this list override those in the 
+			Replacements list, so they do not need to be entered in both lists.
+			-->
+			<Item word="PowerPoint" />
+			<Item word="SharePoint" />
+			<Item word="BSpline" />
+			<Item word="CSharp" />
+			<Item word="hResult" />
+			<Item word="iPhone" />
+			<Item word="RegEx" />
+			<Item word="WiFi" />
+			<Item word="IPv6" />
+			<Item word="IPv4" />
+			<Item word="cRef" />
+			<Item word="hRef" />
+			<Item word="NaN" />
+			<Item word="GHz" />
+			<Item word="kHz" />
+			<Item word="kB" />
+			<Item word="4G" />
+			<Item word="3G" />
+			<Item word="3D" />
+			<Item word="2D" />
+		</NonSplittable>

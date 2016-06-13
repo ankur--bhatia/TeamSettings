@@ -1,0 +1,60 @@
+extensions: designer.cs generated.cs
+//===========================================================================================================
+// <copyright file="%FileName%" company="Ollon, LLC">
+//
+//	Copyright (c) %CreationYear% Ollon, LLC.  All rights reserved.
+//
+//	THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
+// 	OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
+// 	LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+// 	FITNESS FOR A PARTICULAR PURPOSE.
+//
+// </copyright>
+//===========================================================================================================
+extensions: .cs .cpp .h
+#region License Header
+//===========================================================================================================
+// <copyright file="%FileName%" company="Ollon, LLC">
+//
+//	Copyright (c) %CreationYear% Ollon, LLC.  All rights reserved.
+//
+//	THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
+// 	OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
+// 	LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+// 	FITNESS FOR A PARTICULAR PURPOSE.
+//
+// </copyright>
+//===========================================================================================================
+#endregion
+extensions: .aspx .ascx
+<%--
+//===========================================================================================================
+// <copyright file="%FileName%" company="Ollon, LLC">
+//
+//	Copyright (c) %CreationYear% Ollon, LLC.  All rights reserved.
+//
+//	THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
+// 	OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
+// 	LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+// 	FITNESS FOR A PARTICULAR PURPOSE.
+//
+// </copyright>
+//===========================================================================================================
+--%>
+extensions: .vb
+'Sample license text.
+extensions:  .xml .config .xsd
+<!--
+//===========================================================================================================
+// <copyright file="%FileName%" company="Ollon, LLC">
+//
+//	Copyright (c) %CreationYear% Ollon, LLC.  All rights reserved.
+//
+//	THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY
+// 	OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT
+// 	LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+// 	FITNESS FOR A PARTICULAR PURPOSE.
+//
+// </copyright>
+//===========================================================================================================
+-->

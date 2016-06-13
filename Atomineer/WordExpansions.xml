@@ -1,0 +1,542 @@
+﻿<WordExpansions>
+			<!--
+				Expansions for abbreviated single words. Must be in lowercase.
+				You can match several abbreviations for the same word by separating them with commas.
+
+				If you wish, you can use this feature to delete unwanted words (typically prefixes/suffixes).
+				Just set desc="-" for any matching entries you wish to remove from the documentation.
+
+				Note: Atomineer can only match one abbreviation, so in cases where two or more
+				meanings exist for one abbreviation (e.g. "doc" -> "document" or "delete on completion",
+				you either have to expand to one form (and get it wrong sometimes) or delete the expansion
+				entirely (and get it wrong always!). This is the reason why a few common abbreviations are
+				not expanded by default - there are several possoble expansions, and Atomineer has no
+				way of knowing which one is correct.
+			-->
+
+			<If name="a#">
+				<If name="acc" desc="accumulate" />
+				<If name="acct" desc="account" />
+				<If name="accts" desc="accounts" />
+				<If name="ack" desc="acknowledge" />
+				<If name="acq" desc="acquire" />
+				<If name="alg" desc="algorithm" />
+				<If name="alt" desc="alternate" />
+				<If name="adr,addr" desc="address" />
+				<If name="adv" desc="advance" />
+				<If name="agg" desc="aggregate" />
+				<If name="alloc" desc="allocate" />
+				<If name="alt" desc="alternate" />
+				<If name="amt" desc="amount" />
+				<If name="ang" desc="angle" />
+				<If name="ani,anim" desc="animation" />
+				<If name="app" desc="application" />
+				<If name="appt" desc="appointment" />
+				<If name="appts" desc="appointments" />
+				<If name="arg" desc="argument" />
+				<If name="ar" desc="archive" />
+				<If name="args" desc="arguments" />
+				<If name="arr,ary" desc="array" />
+				<If name="asc" desc="ascending" />
+				<If name="asm" desc="assembly" />
+				<If name="assoc" desc="associated" />
+				<If name="assy" desc="assembly" />
+				<If name="async" desc="asynchronous" />
+				<If name="attr,attrib" desc="attribute" />
+				<If name="attrs,attribs" desc="attributes" />
+				<If name="auth" desc="authentication" />
+				<If name="auto" desc="automatic" />
+				<If name="aux" desc="auxiliary" />
+				<If name="avg" desc="average" />
+			</If>
+			<If name="b#">
+				<If name="bal" desc="balance" />
+				<If name="bak" desc="backup" />
+				<If name="bdy" desc="boundary" />
+				<If name="blk" desc="block" />
+				<If name="bot" desc="bottom" />
+				<If name="bbox" desc="bounding box" />
+				<If name="bg,bgnd" desc="background" />
+				<If name="bk,blk" desc="block" />
+				<If name="buf,buff" desc="buffer" />
+				<If name="bmp" desc="bitmap" />
+				<If name="bpp" desc="bits per pixel" />
+				<If name="br" desc="line break" />
+				<If name="brg" desc="bearing" />
+				<If name="brk" desc="break" />
+				<If name="bn,btn" desc="button" />
+			</If>
+			<If name="c#">
+				<If name="cal" desc="calendar" />
+				<If name="calc" desc="calculate" />
+				<If name="cam" desc="camera" />
+				<If name="cap" desc="capability" />
+				<If name="caps" desc="capabilities" />
+				<If name="cart" desc="cartesian" />
+				<If name="cat" desc="category" />
+				<If name="cats" desc="categories" />
+				<If name="cbl" desc="cable" />
+				<If name="cbo" desc="combobox" />
+				<If name="ceil" desc="ceiling" />
+				<If name="chg" desc="change" />
+				<If name="chk" desc="check" />
+				<If name="chan,chnl" desc="channel" />
+				<If name="char,chr" desc="character" />
+				<If name="chars,chrs" desc="characters" />
+				<If name="clist" desc="command list" />
+				<If name="clk" desc="clock" />
+				<If name="clr" desc="colour" />
+				<If name="cmd" desc="command" />
+				<If name="cmds" desc="commands" />
+				<If name="cmn" desc="common" />
+				<If name="cmp" desc="compare" />
+				<If name="cmt" desc="comment" />
+				<If name="coll" desc="collection" />
+				<If name="coop" desc="cooperative" />
+				<If name="comm,comms" desc="communications" />
+				<If name="comp" desc="component" />
+				<If name="compat" desc="compatible" />
+				<If name="concat" desc="concatenate" />
+				<If name="cond" desc="condition" />
+				<If name="config,cfg" desc="configuration" />
+				<If name="conn" desc="connection" />
+				<If name="const" desc="constant" />
+				<If name="cont" desc="container" />
+				<If name="conv,cnv" desc="convert" />
+				<If name="coord" desc="coordinate" />
+				<If name="coords" desc="coordinates" />
+				<If name="cos" desc="cosine" />
+				<If name="cosh" desc="hyperbolic cosine" />
+				<If name="cot" desc="cotangent" />
+				<If name="cpy" desc="copy" />
+				<If name="cm" desc="centimetres" />
+				<If name="cmp" desc="compare" />
+				<If name="cnt" desc="count" />
+				<If name="cr" desc="carriage return" />
+				<If name="crlf" desc="newline" />
+				<If name="cs" desc="create struct" />
+				<If name="csr,curs" desc="cursor" />
+				<If name="ctor" desc="constructor" />
+				<If name="ctr" desc="counter" />
+				<If name="ctl,ctrl" desc="control" />
+				<If name="ctls,ctrls" desc="controls" />
+				<If name="ctx" desc="context" />
+				<If name="cum" desc="cumulative" />
+				<If name="cur" desc="current" />
+				<If name="cust" desc="customer" />
+				<If name="cyl" desc="cylinder" />
+			</If>
+			<If name="d#">
+				<If name="db,dbase" desc="database" />
+				<If name="dbl" desc="double" />
+				<If name="dbg" desc="debug" />
+				<If name="dbgr" desc="debugger" />
+				<If name="dc,cdc" desc="device-context" />
+				<If name="dec,decr" desc="decrement" />
+				<If name="decl" desc="declaration" />
+				<If name="def,defn" desc="definition" />
+				<If name="deg,degs" desc="degrees" />
+				<If name="del" desc="delete" />
+				<If name="delim" desc="delimiter" />
+				<If name="denom" desc="denominator" />
+				<If name="deref" desc="dereference" />
+				<If name="derv" desc="derivative" />
+				<If name="des,desc,descr" desc="description" />
+				<If name="dest,dst" desc="destination" />
+				<If name="dev" desc="development" />
+				<If name="dsgn,dgn" desc="design" />
+				<If name="dgram" desc="datagram" />
+				<If name="dib" desc="bitmap" />
+				<If name="diag,dgrm" desc="diagram" />
+				<If name="dict" desc="dictionary" />
+				<If name="diff" desc="difference" />
+				<If name="dist" desc="distance" />
+				<If name="dlg" desc="dialog" />
+				<If name="dload" desc="download" />
+				<If name="doc" desc="document" />
+				<If name="docs" desc="documents" />
+				<If name="dof" desc="degree of freedom" />
+				<If name="drv,drvr" desc="driver" />
+				<If name="dtor" desc="destructor" />
+				<If name="dup" desc="duplicate" />
+				<If name="dw,dword" desc="double-word" />
+				<If name="dyn" desc="dynamic" />
+			</If>
+			<If name="e#">
+				<If name="elem,elt" desc="element" />
+				<If name="elems,elts" desc="elements" />
+				<If name="elim" desc="eliminate" />
+				<If name="emu" desc="emulate" />
+				<If name="enc" desc="encode" />
+				<If name="env" desc="environment" />
+				<If name="eor" desc="exclusive-or" />
+				<If name="err" desc="error" />
+				<If name="esc" desc="escape" />
+				<If name="est" desc="estimate" />
+				<If name="evt" desc="event" />
+				<If name="ext" desc="extent" />
+				<If name="exe" desc="executable" />
+				<If name="exec" desc="execute" />
+				<If name="exp" desc="exponent" />
+				<If name="expr" desc="expression" />
+				<If name="extn" desc="extension" />
+			</If>
+			<If name="f#">
+				<If name="farenheit" desc="fahrenheit" />
+				<If name="fg,fore" desc="foreground" />
+				<If name="fld" desc="field" />
+				<If name="flav" desc="flavor" />
+				<If name="flt,fltr" desc="filter" />
+				<If name="fmt" desc="format" />
+				<If name="fnt" desc="font" />
+				<If name="fn,fnc" desc="function" />
+				<If name="fname" desc="filename" />
+				<If name="frag" desc="fragment" />
+				<If name="freq" desc="frequency" />
+				<If name="frm" desc="form" />
+				<If name="fs" desc="file system" />
+				<If name="func" desc="function" />
+				<If name="fw" desc="firmware" />
+				<If name="fwd" desc="forward" />
+				<If name="fx" desc="effects" />
+			</If>
+			<If name="g#">
+				<If name="gb" desc="gigabytes" />
+				<If name="gen" desc="generate" />
+				<If name="geom" desc="geometry" />
+				<If name="gfx" desc="graphics" />
+				<If name="grad" desc="graduated" />
+				<If name="grd" desc="grid" />
+				<If name="gr" desc="graphics" />
+				<If name="grp" desc="group" />
+				<If name="gui" desc="graphical user interface" />
+				<If name="guid" desc="unique identifier" />
+			</If>
+			<If name="h#">
+				<If name="hdg" desc="heading" />
+				<If name="hdr" desc="header" />
+				<If name="heir" desc="hierarchy" />
+				<If name="hdlr" desc="handler" />
+				<If name="hex" desc="hexadecimal" />
+				<If name="hi" desc="higher" />
+				<If name="hnd,hndl" desc="handle" />
+				<If name="horz" desc="horizontal" />
+				<If name="ht" desc="height" />
+				<If name="hw" desc="hardware" />
+				<If name="hyp" desc="hyperbolic" />
+			</If>
+			<If name="i#">
+				<If name="ico" desc="icon" />
+				<If name="id,ident" desc="identifier" />
+				<If name="ids,idents" desc="identifiers" />
+				<If name="idx" desc="index" />
+				<If name="iface" desc="interface" />
+				<If name="img" desc="image" />
+				<If name="impl" desc="implementation" />
+				<If name="inc,incr" desc="increment" />
+				<If name="incl" desc="include" />
+				<If name="info" desc="information" />
+				<If name="init,ini" desc="initialise" />
+				<If name="inits" desc="initialises" />
+				<If name="ins" desc="insert" />
+				<If name="inst" desc="instance" />
+				<If name="inv" desc="inverse" />
+				<If name="io" desc="I/O" />
+				<If name="isect" desc="intersection" />
+				<If name="istrm,istream" desc="input stream" />
+				<If name="it,iter" desc="iterator" />
+				<If name="ix" desc="index" />
+			</If>
+			<If name="j#">
+				<If name="jit" desc="just-in-time" />
+				<If name="jkt" desc="jacket" />
+				<If name="jmp" desc="jump" />
+			</If>
+			<If name="k#">
+				<If name="kb" desc="kilobytes" />
+				<If name="kbd" desc="keyboard" />
+				<If name="kilos,kg,kgs" desc="kilograms" />
+				<If name="km,kms" desc="kilometres" />
+				<If name="kmh" desc="kilometres per hour" />
+			</If>
+			<If name="l#">
+				<If name="lang" desc="language" />
+				<If name="lbl" desc="label" />
+				<If name="lcase" desc="lowercase" />
+				<If name="lb" desc="pound" />
+				<If name="lbs" desc="pounds" />
+				<If name="lo" desc="lower" />
+				<If name="loc,locn" desc="location" />
+				<If name="ldr" desc="loader" />
+				<If name="len" desc="length" />
+				<If name="lerp" desc="linearly interpolate" />
+				<If name="lf" desc="line feed" />
+				<If name="lim" desc="limit" />
+				<If name="lims" desc="limits" />
+				<If name="ln" desc="line" />
+				<If name="lnk" desc="link" />
+				<If name="lp" desc="pointer to a" />
+				<If name="lhs" desc="left hand side" />
+				<If name="lib" desc="library" />
+				<If name="lst" desc="list" />
+				<If name="lvl,lev" desc="level" />
+				<If name="lyr" desc="layer" />
+			</If>
+			<If name="m#">
+				<If name="mag" desc="magnitude" />
+				<If name="mat" desc="matrix" />
+				<If name="math,maths" desc="mathematics" />
+				<If name="mb" desc="megabytes" />
+				<If name="mbox" desc="mailbox" />
+				<If name="mdl" desc="model" />
+				<If name="mgr,man,mngr" desc="manager" />
+				<If name="mgt,mgmt" desc="management" />
+				<If name="max" desc="maximum" />
+				<If name="mem" desc="memory" />
+				<If name="med" desc="median" />
+				<If name="mid" desc="middle" />
+				<If name="millisecs" desc="milliseconds" />
+				<If name="min" desc="minimum" />
+				<If name="mm" desc="millimetres" />
+				<If name="mod" desc="modifier" />
+				<If name="mon,mntr" desc="monitor" />
+				<If name="ml" desc="miles" />
+				<If name="mph" desc="miles per hour" />
+				<If name="ms" desc="milliseconds" />
+				<If name="mtbf" desc="mean time between failures" />
+				<If name="msg,mesg" desc="message" />
+				<If name="mtg" desc="meeting" />
+				<If name="mtl" desc="material" />
+				<If name="mult" desc="multiply" />
+				<If name="mux" desc="multiplexer" />
+			</If>
+			<If name="n#">
+				<If name="nav" desc="navigation" />
+				<If name="nc" desc="non-client" />
+				<If name="neg" desc="negative" />
+				<If name="nl,newl" desc="newline" />
+				<If name="norm" desc="normalise" />
+				<If name="norms" desc="normals" />
+				<If name="num,nbr" desc="number" />
+				<If name="nxt" desc="next" />
+			</If>
+			<If name="o#">
+				<If name="obj" desc="object" />
+				<If name="objs" desc="objects" />
+				<If name="oct" desc="octal" />
+				<If name="ofd" desc="open file dialog" />
+				<If name="op" desc="operation" />
+				<If name="opd,opnd" desc="operand" />
+				<If name="oper,opr" desc="operator" />
+				<If name="opt" desc="option" />
+				<If name="opts" desc="options" />
+				<If name="ord" desc="order" />
+				<If name="org" desc="organisation" />
+				<If name="orig" desc="original" />
+				<If name="os" desc="operating system" />
+				<If name="ostrm,ostream" desc="output stream" />
+				<If name="ownr" desc="owner" />
+			</If>
+			<If name="p#">
+				<If name="pal" desc="palette" />
+				<If name="param,parm" desc="parameter" />
+				<If name="params,parms" desc="parameters" />
+				<If name="ptn,partn" desc="partition" />
+				<If name="pat,patt" desc="pattern" />
+				<If name="pats,patts" desc="patterns" />
+				<If name="pbm" desc="portable bitmap" />
+				<If name="perm" desc="permission" />
+				<If name="perms" desc="permissions" />
+				<If name="perf" desc="performance" />
+				<If name="pg" desc="page" />
+				<If name="phys" desc="physical" />
+				<If name="pic" desc="picture" />
+				<If name="pkg" desc="package" />
+				<If name="pkt" desc="packet" />
+				<If name="pkts" desc="packets" />
+				<If name="plist" desc="point list" />
+				<If name="pos,posn" desc="position" />
+				<If name="poly" desc="polygon" />
+				<If name="pred" desc="predicate" />
+				<If name="pref" desc="preference" />
+				<If name="prefs" desc="preferences" />
+				<If name="precond" desc="precondition" />
+				<If name="premult" desc="pre-multiply" />
+				<If name="prev" desc="previous" />
+				<If name="prim" desc="primitive" />
+				<If name="prims" desc="primitives" />
+				<If name="prod" desc="product" />
+				<If name="prods" desc="products" />
+				<If name="proj,prj" desc="project" />
+				<If name="projs" desc="projects" />
+				<If name="prop" desc="property" />
+				<If name="props" desc="properties" />
+				<If name="proto" desc="prototype" />
+				<If name="pt,pnt" desc="point" />
+				<If name="pth" desc="path" />
+				<If name="ptp,p2p" desc="peer-to-peer" />
+				<If name="pts" desc="points" />
+				<If name="ptr" desc="pointer" />
+				<If name="pw,pwd" desc="password" />
+				<If name="pwr" desc="power" />
+			</If>
+			<If name="q#">
+				<If name="q" desc="quarter" />
+				<If name="quat" desc="quaternion" />
+				<If name="quest" desc="question" />
+				<If name="qword" desc="quad-word" />
+				<If name="qy,qry" desc="query" />
+			</If>
+			<If name="r#">
+				<If name="rad,rads" desc="radians" />
+				<If name="rbn" desc="ribbon" />
+				<If name="rbuff" desc="read buffer" />
+				<If name="rc,rct,rect" desc="rectangle" />
+				<If name="rects" desc="rectangles" />
+				<If name="recv,rcv" desc="receive" />
+				<If name="rcvr" desc="receiver" />
+				<If name="rdo" desc="radio" />
+				<If name="rdr" desc="reader" />
+				<If name="rec" desc="record" />
+				<If name="recip" desc="reciprocal" />
+				<If name="recs" desc="records" />
+				<If name="recd" desc="received" />
+				<If name="ref" desc="reference" />
+				<If name="refs" desc="references" />
+				<If name="reg" desc="register" />
+				<If name="regex,regexp" desc="regular expression" />
+				<If name="reinit" desc="reinitialise" />
+				<If name="recalc" desc="recalculate" />
+				<If name="reconn" desc="reconnect" />
+				<If name="rel" desc="relative" />
+				<If name="res,rsrc" desc="resource" />
+				<If name="resn" desc="reservation" />
+				<If name="rev" desc="reverse" />
+				<If name="rgn" desc="region" />
+				<If name="rhs" desc="right hand side" />
+				<If name="rnd,rand" desc="random" />
+				<If name="rng" desc="random number generator" />
+				<If name="rm" desc="remove" />
+				<If name="rpt" desc="repeat" />
+				<If name="rq,req" desc="request" />
+				<If name="rst" desc="reset" />
+				<If name="rsvd" desc="reserved" />
+				<If name="rt" desc="right" />
+				<If name="rtn" desc="return" />
+				<If name="rtns" desc="returns" />
+				<If name="rvn" desc="revision" />
+				<If name="rx" desc="receive" />
+				<If name="rxd" desc="receive data" />
+			</If>
+			<If name="s#">
+				<If name="sc,scr,scrn" desc="screen" />
+				<If name="sbar" desc="scrollbar" />
+				<If name="scrl" desc="scroll" />
+				<If name="sec" desc="security" />
+				<If name="seg" desc="segment" />
+				<If name="segs" desc="segments" />
+				<If name="sel,seld" desc="selected" />
+				<If name="secs" desc="seconds" />
+				<If name="sep" desc="separator" />
+				<If name="seps" desc="separators" />
+				<If name="seq" desc="sequence" />
+				<If name="seql" desc="sequential" />
+				<If name="seqs" desc="sequences" />
+				<If name="sfd" desc="save file dialog" />
+				<If name="sht" desc="sheet" />
+				<If name="sgnl,sig" desc="signal" />
+				<If name="sigs" desc="signals" />
+				<If name="sim" desc="simulation" />
+				<If name="sin" desc="sine" />
+				<If name="sinh" desc="hyperbolic sine" />
+				<If name="sln,seln" desc="selection" />
+				<If name="snd" desc="sound" />
+				<If name="sndr" desc="sender" />
+				<If name="soln" desc="solution" />
+				<If name="spd" desc="speed" />
+				<If name="sph" desc="sphere" />
+				<If name="spec" desc="specifier" />
+				<If name="src" desc="source" />
+				<If name="std" desc="standard" />
+				<If name="stats" desc="statistics" />
+				<If name="stmt" desc="statement" />
+				<If name="str" desc="string" />
+				<If name="struct" desc="structure" />
+				<If name="subdiv" desc="subdivide" />
+				<If name="subst" desc="substitute" />
+				<If name="succ" desc="successor" />
+				<If name="svr,srv,srvr" desc="server" />
+				<If name="sw" desc="software" />
+				<If name="sym" desc="symbol" />
+				<If name="sync,synch" desc="synchronise" />
+				<If name="syncs,synchs" desc="synchronises" />
+				<If name="sys" desc="system" />
+				<If name="sn" desc="serial number" />
+				<If name="sz" desc="size" />
+			</If>
+			<If name="t#">
+				<If name="tan" desc="tangent" />
+				<If name="tanh" desc="hyperbolic tangent" />
+				<If name="tb" desc="terabytes" />
+				<If name="tbl" desc="table" />
+				<If name="tbar,tbr" desc="toolbar" />
+				<If name="tech" desc="technology" />
+				<If name="temp,tmp" desc="temporary" />
+				<If name="templ,tmpl" desc="template" />
+				<If name="tfer" desc="transfer" />
+				<If name="tgram" desc="telegram" />
+				<If name="tm" desc="time" />
+				<If name="tmr" desc="timer" />
+				<If name="tol" desc="tolerance" />
+				<If name="tot" desc="total" />
+				<If name="tri" desc="triangle" />
+				<If name="trunc" desc="truncate" />
+				<If name="tst" desc="test" />
+				<If name="tx" desc="transmit" />
+				<If name="txd" desc="transmit data" />
+				<If name="trans,txn" desc="transaction" />
+				<If name="txt" desc="text" />
+			</If>
+			<If name="u#">
+				<If name="ui" desc="user interface" />
+				<If name="ucase" desc="uppercase" />
+				<If name="udate,upd" desc="update" />
+				<If name="util" desc="utility" />
+				<If name="utils" desc="utilities" />
+			</If>
+			<If name="v#">
+				<If name="val" desc="value" />
+				<If name="var" desc="variable" />
+				<If name="vars" desc="variables" />
+				<If name="vec" desc="vector" />
+				<If name="vel" desc="velocity" />
+				<If name="ver,vsn,vrsn" desc="version" />
+				<If name="vert" desc="vertical" />
+				<If name="verts" desc="vertices" />
+				<If name="vol" desc="volume" />
+				<If name="vtx" desc="vertex" />
+				<If name="va" desc="variable arguments" />
+				<If name="val" desc="value" />
+				<If name="vm" desc="virtual memory" />
+				<If name="vw" desc="view" />
+			</If>
+			<If name="w#">
+				<If name="warn" desc="warning" />
+				<If name="wbuff" desc="write buffer" />
+				<If name="win,wnd" desc="window" />
+				<If name="wm" desc="windows message" />
+			</If>
+			<If name="x#">
+				<If name="xfm,xform" desc="transform" />
+				<If name="xmit" desc="transmit" />
+				<If name="xmitter" desc="transmitter" />
+				<If name="xor" desc="exclusive-or" />
+				<If name="xref" desc="cross-reference" />
+				<If name="xtn" desc="extension" />
+			</If>
+			<If name="yr" desc="year" />
+
+			<If name="x" desc="x coordinate" />
+			<If name="y" desc="y coordinate" />
+			<If name="z" desc="z coordinate" />
+		</WordExpansions>
